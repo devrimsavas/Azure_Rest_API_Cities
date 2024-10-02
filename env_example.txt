@@ -1,0 +1,8 @@
+
+
+ADMIN_USERNAME=<your admin name>
+ADMIN_PASSWORD=<your password>
+DATABASE_NAME=<database name>
+HOST="<yourdatabaseserver>.database.windows.net"
+DIALECT="mssql"  //if you use mssql 
+PORT=3000 

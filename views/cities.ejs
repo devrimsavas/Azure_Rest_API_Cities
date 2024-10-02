@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <h2 class="p-3">
+        <%= title %>
+    </h2>
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>City Name</th>
+                    <th>Country </th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <% cities.forEach(function(city) { %>
+                    <tr>
+                        <td>
+                            <%= city.id %>
+                        </td>
+                        <td>
+                            <%= city.Name %>
+                        </td>
+                        <td>
+                            <%=city.Country %>
+                        </td>
+
+
+                    </tr>
+                    <% }); %>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
