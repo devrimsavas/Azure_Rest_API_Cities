@@ -16,6 +16,15 @@ router.get("/", async (req, res) => {
   });
 });
 
+//show all as json
+
+router.get("/jcity", async (req, res) => {
+  const cities = await cityService.getAll();
+  res.json({
+    cities: cities,
+  });
+});
+
 router.post("/", async (req, res) => {
   const { Name, Country } = req.body;
 
