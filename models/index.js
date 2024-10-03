@@ -5,7 +5,7 @@ const basename = path.basename(__filename);
 
 require("dotenv").config();
 
-//sceptic
+//sceptic dialects
 const sequelize = new Sequelize(
   process.env.DATABASE_NAME,
   process.env.ADMIN_USERNAME,
